@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Box</title>
+    
+</head>
+<link rel="stylesheet" href="./css/style.css" />
+<body class="body">
+    <div class="navbar">
+        <img src="./images/python-logo.png" alt="main-logo" height="90px" />
+    </div>
+
+    <div class="main-container">
+        <div class="main-content">
+            <h1 class="heading">Certified Python  Course</h1>
+            <p class="text">In Association with</p>
+            <img src="./images/iitmm-logo.png" class="iitm-logo-image" />
+            <p class="text">Certificate from Python Institute PI</p>
+            <button class="download-btn" onclick="openModal()">Download Curriculum</button>
+        </div>
+
+        <div class="main-image">
+            <img src="./images/main-imagee.jpg" alt="main-image" class="image" />
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="form">
+            <div class="register-container">
+
+                <img src="./images/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+
+                <div class="register-header">
+                    <img src="./images/python-logo.png" alt="python-logo ">
+                    <h2>Register now</h2>
+                </div>
+
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="E-mail">
+                    <input type="tel" placeholder="Mobile Number">
+                    <select>
+                        <option value="">Looking for?</option>
+                        <option>Python Developer</option>
+                        <option>Python Coder</option>
+                        
+                    </select>
+                    <div class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <label>I hereby accepting and agree the terms and conditions and privacy
+                                policy of ExcelR Solutions</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
